@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JEE NEET Solver</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🎓 JEE NEET Solver</h1>
+  <p>Practice • Solve • Learn</p>
+</header>
+
+<main class="container">
+
+  <section class="card">
+    <h2>📚 Practice শুরু করুন</h2>
+
+    <label>Exam</label>
+    <select id="exam">
+      <option value="JEE">JEE</option>
+      <option value="NEET">NEET</option>
+    </select>
+
+    <label>Subject</label>
+    <select id="subject">
+      <option value="Physics">Physics</option>
+      <option value="Chemistry">Chemistry</option>
+      <option value="Mathematics">Mathematics</option>
+      <option value="Biology">Biology</option>
+    </select>
+
+    <button id="startBtn">Practice শুরু করুন</button>
+  </section>
+
+  <section class="card hidden" id="quizCard">
+    <div class="quiz-top">
+      <span id="progress"></span>
+      <span id="score">Score: 0</span>
+    </div>
+
+    <h2 id="question"></h2>
+    <div id="options"></div>
+
+    <div id="feedback" class="feedback hidden"></div>
+
+    <button id="solutionBtn" class="secondary">
+      💡 সমাধান দেখুন
+    </button>
+
+    <button id="nextBtn">
+      ➡️ পরের প্রশ্ন
+    </button>
+  </section>
+
+  <section class="card">
+    <h2>✍️ নিজের প্রশ্ন সমাধান করুন</h2>
+
+    <textarea id="customQuestion"
+      placeholder="JEE / NEET-এর প্রশ্ন লিখুন..."></textarea>
+
+    <button id="solveBtn">AI দিয়ে সমাধান করুন</button>
+
+    <div id="customResult" class="result hidden"></div>
+  </section>
+
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
